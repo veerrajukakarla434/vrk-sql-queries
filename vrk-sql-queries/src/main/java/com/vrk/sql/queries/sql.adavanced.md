@@ -34,3 +34,8 @@
 
 **NonClustered Index:**
 * NonClustered Index does not alter the physical order of the table and maintains logical order of data. Each table can have 999 nonclustered indexes.
+
+### SQL CREATE INDEX Statement
+* The CREATE INDEX statement is used to create indexes in tables.
+* Indexes are used to retrieve data from the database very fast. The users cannot see the indexes, they are just used to speed up searches/queries.
+
