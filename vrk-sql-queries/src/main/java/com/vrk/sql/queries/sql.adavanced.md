@@ -50,11 +50,10 @@ It is a DML command.	| It is a DDL command.
 
 * Creates an index on a table. Duplicate values are allowed.
 
->CREATE INDEX index_name ON table_name (column1, column2, ...);
+> CREATE INDEX index_name ON table_name (column1, column2, ...);
 
 * Creates a unique index on a table. Duplicate values are not allowed.
 
->CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);
+> CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);
 
-
-> dfgsdfgsdgsdgsdgsdgsdgd.
+![Wikipedia logo](https://upload.wikimedia.org/wikipedia/en/8/80/Wikipedia-logo-v2.svg "Wikipedia logo")
