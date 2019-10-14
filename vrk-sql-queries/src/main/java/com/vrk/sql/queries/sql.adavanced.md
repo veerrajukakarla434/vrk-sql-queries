@@ -43,5 +43,4 @@
 
 * Creates an index on a table. Duplicate values are allowed:
 
-* CREATE INDEX index_name
-ON table_name (column1, column2, ...);
+* **CREATE INDEX index_name ON table_name (column1, column2, ...);**
