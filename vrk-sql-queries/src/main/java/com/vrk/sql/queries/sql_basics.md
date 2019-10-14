@@ -62,3 +62,31 @@ https://www.w3resource.com/sql/creating-and-maintaining-tables/creating-table-co
 
 **ERROR : Record in child table exist**
 
+### DROP TABLE :
+* The **DROP TABLE** command deletes a table in the database.
+
+* The following SQL deletes the table "Shippers":
+**DROP TABLE Shippers;**
+
+### TRUNCATE TABLE:
+* The **TRUNCATE TABLE** command deletes the data inside a table, but not the table itself.
+
+* The following SQL truncates the table "Categories": 
+**TRUNCATE TABLE Categories;**
+
+### Delete Table:
+* The DELETE Statement is used to delete rows from a table.
+* **NOTE:** The WHERE clause in the sql delete command is optional and it identifies the rows in the column that gets deleted. If you do not include the WHERE clause all the rows in the table is deleted, so be careful while writing a DELETE query without WHERE clause.
+
+# Difference between DELETE and TRUNCATE Statements:
+
+* **DELETE Statement:** This command deletes only the rows from the table based on the condition given in the where clause or deletes all the rows from the table if no condition is specified. But it does not free the space containing the table.
+
+* **TRUNCATE statement:** This command is used to delete all the rows from the table and free the space containing the table.
+
+### When are we going to use truncate and delete?
+
+* TRUNCATE is a DDL command, whereas DELETE is a DML command.
+* We can’t execute a trigger in case of TRUNCATE whilst with DELETE, we can accomplish a trigger.
+* TRUNCATE is quicker than DELETE, for the reason that when we use DELETE to delete the data, at that time it store the whole statistics in the rollback gap on or after where we can get the data back after removal. In case of TRUNCATE, it will not store data in rollback gap and will unswervingly rub it out. TRUNCATE do not recover the deleted data.
+* **We can use any condition in WHERE clause using DELETE but it is not possible with TRUNCATE.5.If a table is referenced by any foreign key constraints, then TRUNCATE won’t work.**
