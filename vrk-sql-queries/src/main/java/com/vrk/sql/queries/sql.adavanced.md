@@ -56,4 +56,4 @@ It is a DML command.	| It is a DDL command.
 
 > CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);
 
-![Wikipedia logo](https://upload.wikimedia.org/wikipedia/en/8/80/Wikipedia-logo-v2.svg "Wikipedia logo")
+!https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/07/Clauses-used-in-SQL.jpg
