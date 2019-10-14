@@ -59,3 +59,10 @@ It is a DML command	| It is a DDL command
 
 ![dbms-sql-clauses](https://static.javatpoint.com/dbms/images/dbms-sql-clauses.png "dbms-sql-clauses")
 
+
+**1. GROUP BY**
+* SQL GROUP BY statement is used to arrange identical data into groups. The GROUP BY statement is used with the SQL SELECT statement.
+* The GROUP BY statement follows the WHERE clause in a SELECT statement and precedes the ORDER BY clause.
+* The GROUP BY statement is used with aggregation function.
+
+
