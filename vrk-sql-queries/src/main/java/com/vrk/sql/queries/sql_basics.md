@@ -44,10 +44,11 @@ DROP COLUMN column_name
 * **DEFAULT** - Sets a default value for a column when no value is specified
 * **INDEX** - Used to create and retrieve data from the database very quickly
 
-* Examples refer this link : https://www.geeksforgeeks.org/sql-constraints/
-                             https://www.studytonight.com/dbms/sql-constraints.php
-                             https://www.w3schools.com/sql/sql_constraints.asp
-                             https://www.w3resource.com/sql/creating-and-maintaining-tables/creating-table-constraint.php
+* Examples refer this link : 
+https://www.geeksforgeeks.org/sql-constraints/
+https://www.studytonight.com/dbms/sql-constraints.php 
+https://www.w3schools.com/sql/sql_constraints.asp
+https://www.w3resource.com/sql/creating-and-maintaining-tables/creating-table-constraint.php
 
 **Behaviour of Foriegn Key Column on Delete:**
 
