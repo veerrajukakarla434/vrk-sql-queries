@@ -1,4 +1,4 @@
-# SQL Queries
+# SQL Basics
 
 #### 1) What is SQL?
 
@@ -44,7 +44,7 @@ DROP COLUMN column_name
 * **DEFAULT** - Sets a default value for a column when no value is specified
 * **INDEX** - Used to create and retrieve data from the database very quickly
 
-* Examples refer this link : 
+* Examples refer this link :
 https://www.geeksforgeeks.org/sql-constraints/
 https://www.studytonight.com/dbms/sql-constraints.php 
 https://www.w3schools.com/sql/sql_constraints.asp
