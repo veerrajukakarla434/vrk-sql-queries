@@ -33,3 +33,28 @@ DROP COLUMN column_name
 
 #### DCL (Data Control Language): 
 * These statements are used to set privileges such as Grant and Revoke database access permission to the specific user.
+
+## SQL Constraints
+
+* **NOT NULL** - Ensures that a column cannot have a NULL value
+* **UNIQUE** - Ensures that all values in a column are different
+* **PRIMARY KEY** - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+* **FOREIGN KEY** - Uniquely identifies a row/record in another table
+* **CHECK** - Ensures that all values in a column satisfies a specific condition
+* **DEFAULT** - Sets a default value for a column when no value is specified
+* **INDEX** - Used to create and retrieve data from the database very quickly
+
+* Examples refer this link : https://www.geeksforgeeks.org/sql-constraints/
+
+**Behaviour of Foriegn Key Column on Delete:**
+
+* There are two ways to maintin the integrity of data in Child table, when a particular record is deleted in the main table. When two tables are connected with Foriegn key, and certain data in the main table is deleted, for which a record exits in the child table, then we must have some mechanism to save the integrity of data in the child table.
+
+* **On Delete Cascade** : This will remove the record from child table, if that value of foriegn key is deleted from the main table.
+
+* **On Delete Null** : This will set all the values in that record of child table as NULL, for which the value of foriegn key is deleted from the main table.
+
+* If we don't use any of the above, then we cannot delete data from the main table for which data in child table exists. We will get an error if we try to do so.
+
+**ERROR : Record in child table exist**
+
