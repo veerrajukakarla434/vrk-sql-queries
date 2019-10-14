@@ -55,7 +55,7 @@ It is a DML command	| It is a DDL command
 
 > CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);
 
+**4) What are different Clauses used in SQL?**
 
-
-![Clauses-used-in-SQL](https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/07/Clauses-used-in-SQL.jpg "Clauses-used-in-SQL")
+![dbms-sql-clauses](https://static.javatpoint.com/dbms/images/dbms-sql-clauses.png "dbms-sql-clauses")
 
