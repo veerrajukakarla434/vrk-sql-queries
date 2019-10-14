@@ -26,7 +26,6 @@ Delete command is used to delete a row in a table	| Truncate is used to delete a
 You can rollback data after using delete statement	| You cannot rollback data
 It is a DML command	| It is a DDL command
 
-
 **3) What is an Index?**
 
 * An index is performance tuning method of allowing faster retrieval of records from the table. An index creates an entry for each value and it will be faster to retrieve data.
@@ -56,4 +55,7 @@ It is a DML command	| It is a DDL command
 
 > CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);
 
-!https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/07/Clauses-used-in-SQL.jpg
+
+
+![Clauses-used-in-SQL](https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/07/Clauses-used-in-SQL.jpg "Clauses-used-in-SQL")
+
