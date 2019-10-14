@@ -22,9 +22,9 @@
 
 **DELETE** | **TRUNCATE**
 ------------ | -------------
-Delete command is used to delete a row in a table.	| Truncate is used to delete all the rows from a table.
-You can rollback data after using delete statement.	| You cannot rollback data.
-It is a DML command.	| It is a DDL command.
+Delete command is used to delete a row in a table	| Truncate is used to delete all the rows from a table
+You can rollback data after using delete statement	| You cannot rollback data
+It is a DML command	| It is a DDL command
 
 
 **3) What is an Index?**
