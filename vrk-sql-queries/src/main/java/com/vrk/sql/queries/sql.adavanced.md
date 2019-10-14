@@ -55,3 +55,6 @@ It is a DML command.	| It is a DDL command.
 * Creates a unique index on a table. Duplicate values are not allowed.
 
 >CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);
+
+
+> dfgsdfgsdgsdgsdgsdgsdgd.
