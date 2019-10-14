@@ -27,10 +27,10 @@
 * There are three types of indexes -.
 
 **Unique Index:**
- This indexing does not allow the field to have duplicate values if the column is unique indexed. Unique index can be applied automatically when primary key is defined.
+* This indexing does not allow the field to have duplicate values if the column is unique indexed. Unique index can be applied automatically when primary key is defined.
 
 **Clustered Index:**
- This type of index reorders the physical order of the table and search based on the key values. Each table can have only one clustered index.
+* This type of index reorders the physical order of the table and search based on the key values. Each table can have only one clustered index.
 
 **NonClustered Index:**
- NonClustered Index does not alter the physical order of the table and maintains logical order of data. Each table can have 999 nonclustered indexes.
+* NonClustered Index does not alter the physical order of the table and maintains logical order of data. Each table can have 999 nonclustered indexes.
