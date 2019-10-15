@@ -69,15 +69,11 @@ It is a DML command	| It is a DDL command
 * **RIGHT (OUTER) JOIN:** Returns all records from the right table, and the matched records from the left table
 * **FULL (OUTER) JOIN:** Returns all records when there is a match in either left or right table
 
-![img_innerjoin](https://www.w3schools.com/sql/img_innerjoin.gif "img_innerjoin")[img_leftjoin(https://www.w3schools.com/sql/img_leftjoin.gif "img_leftjoin")![img_rightjoin](https://www.w3schools.com/sql/img_rightjoin.gif "img_rightjoin")![img_fulljoin](https://www.w3schools.com/sql/img_fulljoin.gif "img_fulljoin")
+![img_innerjoin](https://www.w3schools.com/sql/img_innerjoin.gif "img_innerjoin")![img_leftjoin](https://www.w3schools.com/sql/img_leftjoin.gif "img_leftjoin")
+![img_rightjoin](https://www.w3schools.com/sql/img_rightjoin.gif "img_rightjoin")
+![img_fulljoin](https://www.w3schools.com/sql/img_fulljoin.gif "img_fulljoin")
 
 **Consider the two tables below:**
-
-
-
-
-
-
 
 
 **4) What are different Clauses used in SQL?**
