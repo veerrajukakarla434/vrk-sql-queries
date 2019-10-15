@@ -95,10 +95,30 @@ FROM table1
 INNER JOIN table2
 ON table1.matching_column = table2.matching_column;
 
-
 >table1: First table.
 table2: Second table
 matching_column: Column common to both the tables.
+
+* Note: We can also write JOIN instead of INNER JOIN. JOIN is same as INNER JOIN.
+
+![6a0120a85dcdae970b012877702708970c-pi](https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b012877702708970c-pi.png "6a0120a85dcdae970b012877702708970c-pi")
+
+*   **Example Queries(INNER JOIN)**
+
+* This query will show the names and age of students enrolled in different courses.
+
+>SELECT StudentCourse.COURSE_ID, Student.NAME, Student.AGE FROM Student
+INNER JOIN StudentCourse
+ON Student.ROLL_NO = StudentCourse.ROLL_NO;
+
+* **Output:**
+
+![table22](https://media.geeksforgeeks.org/wp-content/uploads/table22.png "table22")
+
+
+
+
+
 
 
 
