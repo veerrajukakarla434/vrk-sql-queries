@@ -74,6 +74,10 @@ It is a DML command	| It is a DDL command
 ![img_fulljoin](https://www.w3schools.com/sql/img_fulljoin.gif "img_fulljoin")
 
 **Consider the two tables below:**
+* **Student Table**
+![table1-3](https://media.geeksforgeeks.org/wp-content/cdn-uploads/table1-3.png "table1-3")
+* ** StudentCourse Table**
+![table5](https://media.geeksforgeeks.org/wp-content/uploads/table5.png "table5")
 
 
 **4) What are different Clauses used in SQL?**
