@@ -86,7 +86,7 @@ It is a DML command	| It is a DDL command
 
 * **The simplest Join is INNER JOIN.**
 
-* INNER JOIN: The INNER JOIN keyword selects all rows from both the tables as long as the condition satisfies. This keyword will create the result-set by combining all rows from both the tables where the condition satisfies i.e value of the common field will be same.
+* **1) INNER JOIN:** The INNER JOIN keyword selects all rows from both the tables as long as the condition satisfies. This keyword will create the result-set by combining all rows from both the tables where the condition satisfies i.e value of the common field will be same.
 
 * **Syntax:**
 
@@ -116,7 +116,19 @@ ON Student.ROLL_NO = StudentCourse.ROLL_NO;
 ![table22](https://media.geeksforgeeks.org/wp-content/uploads/table22.png "table22")
 
 
+* **2) LEFT JOIN:** This join returns all the rows of the table on the left side of the join and matching rows for the table on the right side of join. The rows for which there is no matching row on right side, the result-set will contain null. LEFT JOIN is also known as LEFT OUTER JOIN.
 
+* **Syntax:**
+
+>SELECT table1.column1,table1.column2,table2.column1,....
+FROM table1 
+LEFT JOIN table2
+ON table1.matching_column = table2.matching_column;
+
+
+>table1: First table.
+>table2: Second table
+>matching_column: Column common to both the tables.
 
 
 
