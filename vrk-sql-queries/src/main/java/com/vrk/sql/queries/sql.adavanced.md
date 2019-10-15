@@ -158,6 +158,62 @@ ON Student.ROLL_NO = StudentCourse.ROLL_NO;
 ![table31](https://media.geeksforgeeks.org/wp-content/uploads/table31.png "table31")
 
 
+**3) RIGHT JOIN:** RIGHT JOIN is similar to LEFT JOIN. This join returns all the rows of the table on the right side of the join and matching rows for the table on the left side of join. The rows for which there is no matching row on left side, the result-set will contain null. RIGHT JOIN is also known as RIGHT OUTER JOIN.
+
+* **Syntax:**
+
+>SELECT table1.column1,table1.column2,table2.column1,....
+FROM table1 
+RIGHT JOIN table2
+ON table1.matching_column = table2.matching_column;
+
+>table1: First table.
+table2: Second table
+matching_column: Column common to both the tables.
+
+* Note: We can also use RIGHT OUTER JOIN instead of RIGHT JOIN, both are same.
+
+![jk_JustSQL4_image004](http://www.databasejournal.com/img/jk_JustSQL4_image004.jpg "jk_JustSQL4_image004")
+
+#### Example Queries(RIGHT JOIN):
+
+>SELECT Student.NAME,StudentCourse.COURSE_ID 
+FROM Student
+RIGHT JOIN StudentCourse 
+ON StudentCourse.ROLL_NO = Student.ROLL_NO;
+
+#### Output:
+
+![table6](https://media.geeksforgeeks.org/wp-content/uploads/table6.png "table6")
+
+**4) FULL JOIN:** FULL JOIN creates the result-set by combining result of both LEFT JOIN and RIGHT JOIN. The result-set will contain all the rows from both the tables. The rows for which there is no matching, the result-set will contain NULL values.
+
+* **Syntax:**
+
+>SELECT table1.column1,table1.column2,table2.column1,....
+FROM table1 
+FULL JOIN table2
+ON table1.matching_column = table2.matching_column;
+
+
+>table1: First table.
+table2: Second table
+matching_column: Column common to both the tables.
+
+![3Ll1h](https://i.stack.imgur.com/3Ll1h.png "3Ll1h")
+
+#### Example Queries(FULL JOIN):
+
+>SELECT Student.NAME,StudentCourse.COURSE_ID 
+FROM Student
+FULL JOIN StudentCourse 
+ON StudentCourse.ROLL_NO = Student.ROLL_NO;
+
+#### Output:
+
+![table7](https://media.geeksforgeeks.org/wp-content/uploads/table7.png "table7")
+
+
 
 **4) What are different Clauses used in SQL?**
 
