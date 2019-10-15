@@ -214,6 +214,69 @@ ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 ![table7](https://media.geeksforgeeks.org/wp-content/uploads/table7.png "table7")
 
 
+# SQL | Join (Cartesian Join & Self Join)
+
+* In this article, we will discuss about the remaining two JOINS:
+
+### CARTESIAN JOIN
+### SELF JOIN
+
+* Consider the two tables below:
+
+![table2](https://media.geeksforgeeks.org/wp-content/cdn-uploads/table2.jpg "table2")
+
+
+![table51](https://media.geeksforgeeks.org/wp-content/uploads/table51.png "table51")
+
+
+**5) CARTESIAN JOIN:** The CARTESIAN JOIN is also known as CROSS JOIN. In a CARTESIAN JOIN there is a join for each row of one table to every row of another table. This usually happens when the matching column or WHERE condition is not specified.
+In the absence of a WHERE condition the CARTESIAN JOIN will behave like a CARTESIAN PRODUCT . i.e., the number of rows in the result-set is the product of the number of rows of the two tables.
+
+* In the presence of WHERE condition this JOIN will function like a INNER JOIN.
+* Generally speaking, Cross join is similar to an inner join where the join-condition will always evaluate to True
+
+* **Syntax:**
+
+>SELECT table1.column1 , table1.column2, table2.column1...
+FROM table1
+CROSS JOIN table2;
+
+##### Example Queries(CARTESIAN JOIN):
+
+* In the below query we will select NAME and Age from Student table and COURSE_ID from StudentCourse table. In the output you can see that each row of the table Student is joined with every row of the table StudentCourse. The total rows in the result-set = 4 * 4 = 16.
+
+>SELECT Student.NAME, Student.AGE, StudentCourse.COURSE_ID
+FROM Student
+CROSS JOIN StudentCourse;
+
+#### Output:
+
+![table_final](https://media.geeksforgeeks.org/wp-content/uploads/table_final.png "table_final")
+
+
+**6) SELF JOIN:** As the name signifies, in SELF JOIN a table is joined to itself. That is, each row of the table is joined with itself and all other rows depending on some conditions. In other words we can say that it is a join between two copies of the same table.
+
+* **Syntax:**
+
+>SELECT a.coulmn1 , b.column2
+FROM table_name a, table_name b
+WHERE some_condition;
+
+>table_name: Name of the table.
+some_condition: Condition for selecting the rows.
+
+#### Example Queries(SELF JOIN):
+
+>SELECT a.ROLL_NO , b.NAME
+FROM Student a, Student b
+WHERE a.ROLL_NO < b.ROLL_NO;
+
+#### Output:
+
+![tableeee1](https://media.geeksforgeeks.org/wp-content/uploads/tableeee1.png "tableeee1")
+
+
+
 
 **4) What are different Clauses used in SQL?**
 
