@@ -107,7 +107,7 @@ matching_column: Column common to both the tables.
 
 ![6a0120a85dcdae970b012877702708970c-pi](https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b012877702708970c-pi.png "6a0120a85dcdae970b012877702708970c-pi")
 
-### Example Queries(INNER JOIN)
+#### Example Queries(INNER JOIN)
 
 * This query will show the names and age of students enrolled in different courses.
 
@@ -115,7 +115,7 @@ matching_column: Column common to both the tables.
 INNER JOIN StudentCourse
 ON Student.ROLL_NO = StudentCourse.ROLL_NO;
 
-### Output:
+#### Output:
 
 ![table22](https://media.geeksforgeeks.org/wp-content/uploads/table22.png "table22")
 
@@ -134,8 +134,28 @@ ON table1.matching_column = table2.matching_column;
 table2: Second table
 matching_column: Column common to both the tables.
 
+* Note: We can also use LEFT OUTER JOIN instead of LEFT JOIN, both are same.
 
+![VkAT5](https://i.stack.imgur.com/VkAT5.png "VkAT5")
 
+#### Example Queries(LEFT JOIN):
+
+* We can also use LEFT OUTER JOIN instead of LEFT JOIN, both are same.
+
+>SELECT Student.NAME,StudentCourse.COURSE_ID 
+FROM Student
+LEFT JOIN StudentCourse 
+ON StudentCourse.ROLL_NO = Student.ROLL_NO;
+
+**OR**
+>SELECT Student.NAME,StudentCourse.COURSE_ID 
+FROM Student
+LEFT JOIN StudentCourse 
+ON Student.ROLL_NO = StudentCourse.ROLL_NO;
+
+#### Output:
+
+![table31](https://media.geeksforgeeks.org/wp-content/uploads/table31.png "table31")
 
 
 
