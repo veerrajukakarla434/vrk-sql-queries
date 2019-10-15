@@ -55,6 +55,24 @@ It is a DML command	| It is a DDL command
 
 > CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);
 
+## SQL Joins
+
+**SQL JOIN :**
+* A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+
+### Different Types of SQL JOINs 
+
+* Here are the different types of the JOINs in SQL:
+
+* **(INNER) JOIN:** Returns records that have matching values in both tables
+* **LEFT (OUTER) JOIN:** Returns all records from the left table, and the matched records from the right table
+* **RIGHT (OUTER) JOIN:** Returns all records from the right table, and the matched records from the left table
+* **FULL (OUTER) JOIN:** Returns all records when there is a match in either left or right table
+
+![img_innerjoin](https://www.w3schools.com/sql/img_innerjoin.gif "img_innerjoin")![img_leftjoin](https://www.w3schools.com/sql/img_leftjoin.gif "img_leftjoin")
+![img_rightjoin](https://www.w3schools.com/sql/img_rightjoin.gif "img_rightjoin")
+![img_fulljoin](https://www.w3schools.com/sql/img_fulljoin.gif "img_fulljoin")
+
 **4) What are different Clauses used in SQL?**
 
 ![dbms-sql-clauses](https://static.javatpoint.com/dbms/images/dbms-sql-clauses.png "dbms-sql-clauses")
