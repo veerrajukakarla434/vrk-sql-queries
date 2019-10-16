@@ -281,7 +281,14 @@ WHERE a.ROLL_NO < b.ROLL_NO;
 
 **name** |**address**| **phone**|**salary**
 ------------ | ------------- | ------------- | -------------
-mehar | bang | 123456 | 96000
+mehar | hyd | 123456 | 96000
+suresh | hyd | 987654321 | 85000
+praveen | hyd | 777654321 | 86000
+praveen | hyd | 777654321 | 88000
+praveen | hyd | 777654321 | 88340
+vamshi | hyd | 123456 | 68340
+vamshi| hyd | 123456 | 48340
+sheshu | hyd | 123456 | 78340
 
 
 
