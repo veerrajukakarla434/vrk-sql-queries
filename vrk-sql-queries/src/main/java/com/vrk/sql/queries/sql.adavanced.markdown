@@ -312,11 +312,14 @@ sheshu | hyd | 123456 | 78340
 
 > **select max(salary) from employee where salary not in (select max(salary) from employee);**
 
-* OR
+ ###### OR
 
 > **SELECT MAX(Salary) From Employee WHERE Salary < ( SELECT Max(Salary) FROM Employee);**
 
 * **out put :  88340**
+
+
+
 
 
 > **Select name,salary from employee A where n-1 = (Select count(1) from employee B where B.salary>A.salary);**
