@@ -302,6 +302,13 @@ sheshu | hyd | 123456 | 78340
 
 * **out put : mehar 96000**
 
+* **Query for Min salary with employee name**
+
+> **select name, salary from employee where salary = (select min(salary) from employee);**
+
+* **out put : vamshi 48340**
+
+
 > **Select name,salary from employee A where n-1 = (Select count(1) from employee B where B.salary>A.salary);**
 
 
