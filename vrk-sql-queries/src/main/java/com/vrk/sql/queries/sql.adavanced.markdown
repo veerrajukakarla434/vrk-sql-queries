@@ -308,7 +308,7 @@ sheshu | hyd | 123456 | 78340
 
 * **out put : vamshi 48340**
 
-* **Query for 2nd Max salary with employee name**
+* **Query for 2nd Max salary**
 
 > **select max(salary) from employee where salary not in (select max(salary) from employee);**
 
