@@ -275,8 +275,7 @@ WHERE a.ROLL_NO < b.ROLL_NO;
 
 ![tableeee1](https://media.geeksforgeeks.org/wp-content/uploads/tableeee1.png "tableeee1")
 
-
-
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 **4) What are different Clauses used in SQL?**
 
