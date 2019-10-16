@@ -321,7 +321,7 @@ sheshu | hyd | 123456 | 78340
 
 ## Nth salary with other fields
 
-*  **Select name,salary from employee A where n-1 = (Select count(1) from employee B where B.salary>A.salary);**
+*  **select name, salary from employee a where n-1 = (select count(salary)from employee b where a.salary<b.salary);**
 
 * Here you need to replace n value of the salary (2nd salary n=2, if 3rd highest salary n=3..etc)
 
