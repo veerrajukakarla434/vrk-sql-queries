@@ -319,10 +319,21 @@ sheshu | hyd | 123456 | 78340
 * **out put :  88340**
 
 
+## Nth salary with other fields
+
+*  **Select name,salary from employee A where n-1 = (Select count(1) from employee B where B.salary>A.salary);**
+
+* Here you need to replace n value of the salary (2nd salary n=2, if 3rd highest salary n=3..etc)
 
 
+> **select name, salary from employee a where 2-1 = (select count(salary)from employee b where a.salary<b.salary);**
 
-> **Select name,salary from employee A where n-1 = (Select count(1) from employee B where B.salary>A.salary);**
+**OR**
+
+> **SELECT name, Salary FROM Employee e WHERE 2=(SELECT COUNT(DISTINCT Salary) FROM Employee p WHERE e.Salary<=p.Salary);**
+
+
+##### Output: praveen 88340
 
 
 **4) What are different Clauses used in SQL?**
