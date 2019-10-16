@@ -292,18 +292,17 @@ sheshu | hyd | 123456 | 78340
 
 * **Query for Max salary**
 
-==select max(salary) from employee;==
+> **select max(salary) from employee;**
 
 * **out put : 96000**
 
 * **Query for Max salary with employee name**
 
-==select name, salary from employee where salary = (select max(salary) from employee);==
+> **select name, salary from employee where salary = (select max(salary) from employee);**
 
 * **out put : mehar 96000**
 
-
-Select name,salary from employee A where n-1 = (Select count(1) from employee B where B.salary>A.salary);
+> **Select name,salary from employee A where n-1 = (Select count(1) from employee B where B.salary>A.salary);**
 
 
 **4) What are different Clauses used in SQL?**
