@@ -277,13 +277,13 @@ WHERE a.ROLL_NO < b.ROLL_NO;
 
 # SQL Queries On Salary
 
-
+Select name,salary from employee A where n-1 = (Select count(1) from employee B where B.salary>A.salary);
 
 
 **4) What are different Clauses used in SQL?**
 
 
-Select name,salary from employee A where n-1 = (Select count(1) from employee B where B.salary>A.salary);
+
 
 
 
