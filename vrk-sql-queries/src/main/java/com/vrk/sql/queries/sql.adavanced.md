@@ -292,13 +292,13 @@ sheshu | hyd | 123456 | 78340
 
 * **Query for Max salary**
 
-> select max(salary) from employee;
+==select max(salary) from employee;==
 
 * **out put : 96000**
 
 * **Query for Max salary with employee name**
 
-> select name, salary from employee where salary = (select max(salary) from employee);
+==select name, salary from employee where salary = (select max(salary) from employee);==
 
 * **out put : mehar 96000**
 
