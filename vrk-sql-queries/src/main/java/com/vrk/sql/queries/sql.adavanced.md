@@ -284,9 +284,16 @@ WHERE a.ROLL_NO < b.ROLL_NO;
 
 ![dbms-sql-clauses](https://static.javatpoint.com/dbms/images/dbms-sql-clauses.png "dbms-sql-clauses")
 
-### Order of Clauses:
+### Order of clauses while writing select queries:
 
 ![Select-Statement-Execution](https://i0.wp.com/www.complexsql.com/wp-content/uploads/2017/02/Select-Statement-Execution.png?w=548&ssl=1 "Select-Statement-Execution")
+
+
+
+
+
+
+Select name,salary from employee A where n-1 = (Select count(1) from employee B where B.salary>A.salary);
 
 
 

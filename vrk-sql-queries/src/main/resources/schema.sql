@@ -37,3 +37,16 @@ insert into student_course(course_id,roll_no) values(1,5);
 insert into student_course(course_id,roll_no) values(4,9);
 insert into student_course(course_id,roll_no) values(5,10);
 
+
+
+CREATE TABLE employee(
+   
+   name VARCHAR (50)  NOT NULL,
+   address VARCHAR (50) NOT NULL,
+   phone VARCHAR (50)  NOT NULL,
+   salary double precision
+   
+);
+
+insert into employee(name,address,phone,salary) values('mehar','bang','123456',96000);
+
