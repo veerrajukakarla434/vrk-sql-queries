@@ -277,6 +277,14 @@ WHERE a.ROLL_NO < b.ROLL_NO;
 
 # SQL Queries On Salary
 
+* **employee table**
+
+**name** |**address**| **phone**|**salary**
+------------ | ------------- | ------------- | -------------
+mehar | bang | 123456 | 96000
+
+
+
 Select name,salary from employee A where n-1 = (Select count(1) from employee B where B.salary>A.salary);
 
 

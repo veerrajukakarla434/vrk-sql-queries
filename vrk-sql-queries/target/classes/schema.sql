@@ -27,8 +27,6 @@ insert into student(roll_no,name,address,phone,age) values(9,'NIRdAJ','ALIfPUR',
 insert into student(roll_no,name,address,phone,age) values(10,'NIRaAJ','ALIgPUR','XXXb2XXXX',20);
 
 
-
-
 insert into student_course(course_id,roll_no) values(1,1);
 insert into student_course(course_id,roll_no) values(2,2);
 insert into student_course(course_id,roll_no) values(2,3);
