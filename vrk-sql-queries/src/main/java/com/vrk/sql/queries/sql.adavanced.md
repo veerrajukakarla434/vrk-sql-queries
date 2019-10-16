@@ -275,7 +275,7 @@ WHERE a.ROLL_NO < b.ROLL_NO;
 
 ![tableeee1](https://media.geeksforgeeks.org/wp-content/uploads/tableeee1.png "tableeee1")
 
-## SQL Queries On Salary
+# SQL Queries On Salary
 
 
 
@@ -283,6 +283,13 @@ WHERE a.ROLL_NO < b.ROLL_NO;
 **4) What are different Clauses used in SQL?**
 
 ![dbms-sql-clauses](https://static.javatpoint.com/dbms/images/dbms-sql-clauses.png "dbms-sql-clauses")
+
+### Order of Clauses:
+
+![Select-Statement-Execution](https://i0.wp.com/www.complexsql.com/wp-content/uploads/2017/02/Select-Statement-Execution.png?w=548&ssl=1 "Select-Statement-Execution")
+
+
+
 
 
 
