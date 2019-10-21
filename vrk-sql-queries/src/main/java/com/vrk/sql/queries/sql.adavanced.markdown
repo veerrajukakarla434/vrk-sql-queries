@@ -49,11 +49,15 @@ It is a DML command	| It is a DDL command
 
 * Creates an index on a table. Duplicate values are allowed.
 
-> CREATE INDEX index_name ON table_name (column1, column2, ...);
+```SQL
+CREATE INDEX index_name ON table_name (column1, column2, ...);
+```
 
 * Creates a unique index on a table. Duplicate values are not allowed.
 
-> CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);
+```SQL
+CREATE UNIQUE INDEX index_name ON table_name (column1, column2, ...);
+```
 
 ## SQL Joins
 
@@ -94,11 +98,12 @@ It is a DML command	| It is a DDL command
 
 * **Syntax:**
 
->SELECT table1.column1,table1.column2,table2.column1,....
+```SQL
+SELECT table1.column1,table1.column2,table2.column1,....
 FROM table1 
 INNER JOIN table2
 ON table1.matching_column = table2.matching_column;
-
+```
 >table1: First table.
 table2: Second table
 matching_column: Column common to both the tables.
@@ -111,9 +116,11 @@ matching_column: Column common to both the tables.
 
 * This query will show the names and age of students enrolled in different courses.
 
->SELECT StudentCourse.COURSE_ID, Student.NAME, Student.AGE FROM Student
+```SQL
+SELECT StudentCourse.COURSE_ID, Student.NAME, Student.AGE FROM Student
 INNER JOIN StudentCourse
 ON Student.ROLL_NO = StudentCourse.ROLL_NO;
+```
 
 #### Output:
 
@@ -124,11 +131,12 @@ ON Student.ROLL_NO = StudentCourse.ROLL_NO;
 
 * **Syntax:**
 
->SELECT table1.column1,table1.column2,table2.column1,....
+```SQL
+SELECT table1.column1,table1.column2,table2.column1,....
 FROM table1 
 LEFT JOIN table2
 ON table1.matching_column = table2.matching_column;
-
+```
 
 >table1: First table.
 table2: Second table
@@ -142,16 +150,21 @@ matching_column: Column common to both the tables.
 
 * We can also use LEFT OUTER JOIN instead of LEFT JOIN, both are same.
 
->SELECT Student.NAME,StudentCourse.COURSE_ID 
+```SQL
+SELECT Student.NAME,StudentCourse.COURSE_ID 
 FROM Student
 LEFT JOIN StudentCourse 
 ON StudentCourse.ROLL_NO = Student.ROLL_NO;
+```
 
 **OR**
->SELECT Student.NAME,StudentCourse.COURSE_ID 
+
+```SQL
+SELECT Student.NAME,StudentCourse.COURSE_ID 
 FROM Student
 LEFT JOIN StudentCourse 
 ON Student.ROLL_NO = StudentCourse.ROLL_NO;
+```
 
 #### Output:
 
@@ -162,10 +175,12 @@ ON Student.ROLL_NO = StudentCourse.ROLL_NO;
 
 * **Syntax:**
 
->SELECT table1.column1,table1.column2,table2.column1,....
+```SQL
+SELECT table1.column1,table1.column2,table2.column1,....
 FROM table1 
 RIGHT JOIN table2
 ON table1.matching_column = table2.matching_column;
+```
 
 >table1: First table.
 table2: Second table
@@ -177,10 +192,12 @@ matching_column: Column common to both the tables.
 
 #### Example Queries(RIGHT JOIN):
 
->SELECT Student.NAME,StudentCourse.COURSE_ID 
+```SQL
+SELECT Student.NAME,StudentCourse.COURSE_ID 
 FROM Student
 RIGHT JOIN StudentCourse 
 ON StudentCourse.ROLL_NO = Student.ROLL_NO;
+```
 
 #### Output:
 
@@ -190,11 +207,12 @@ ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 
 * **Syntax:**
 
->SELECT table1.column1,table1.column2,table2.column1,....
+```SQL
+SELECT table1.column1,table1.column2,table2.column1,....
 FROM table1 
 FULL JOIN table2
 ON table1.matching_column = table2.matching_column;
-
+```
 
 >table1: First table.
 table2: Second table
@@ -204,10 +222,12 @@ matching_column: Column common to both the tables.
 
 #### Example Queries(FULL JOIN):
 
->SELECT Student.NAME,StudentCourse.COURSE_ID 
+```SQL
+SELECT Student.NAME,StudentCourse.COURSE_ID 
 FROM Student
 FULL JOIN StudentCourse 
 ON StudentCourse.ROLL_NO = Student.ROLL_NO;
+```
 
 #### Output:
 
