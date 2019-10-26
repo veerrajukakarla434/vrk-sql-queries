@@ -256,19 +256,19 @@ In the absence of a WHERE condition the CARTESIAN JOIN will behave like a CARTES
 * Generally speaking, Cross join is similar to an inner join where the join-condition will always evaluate to True
 
 * **Syntax:**
-
->SELECT table1.column1 , table1.column2, table2.column1...
+```SQL
+SELECT table1.column1 , table1.column2, table2.column1...
 FROM table1
 CROSS JOIN table2;
-
+```
 ##### Example Queries(CARTESIAN JOIN):
 
 * In the below query we will select NAME and Age from Student table and COURSE_ID from StudentCourse table. In the output you can see that each row of the table Student is joined with every row of the table StudentCourse. The total rows in the result-set = 4 * 4 = 16.
-
->SELECT Student.NAME, Student.AGE, StudentCourse.COURSE_ID
+```SQL
+SELECT Student.NAME, Student.AGE, StudentCourse.COURSE_ID
 FROM Student
 CROSS JOIN StudentCourse;
-
+```
 #### Output:
 
 ![table_final](https://media.geeksforgeeks.org/wp-content/uploads/table_final.png "table_final")
@@ -277,20 +277,21 @@ CROSS JOIN StudentCourse;
 **6) SELF JOIN:** As the name signifies, in SELF JOIN a table is joined to itself. That is, each row of the table is joined with itself and all other rows depending on some conditions. In other words we can say that it is a join between two copies of the same table.
 
 * **Syntax:**
-
->SELECT a.coulmn1 , b.column2
+```SQL
+SELECT a.coulmn1 , b.column2
 FROM table_name a, table_name b
 WHERE some_condition;
 
->table_name: Name of the table.
+table_name: Name of the table.
 some_condition: Condition for selecting the rows.
+```
 
 #### Example Queries(SELF JOIN):
-
->SELECT a.ROLL_NO , b.NAME
+```SQL
+SELECT a.ROLL_NO , b.NAME
 FROM Student a, Student b
 WHERE a.ROLL_NO < b.ROLL_NO;
-
+```
 #### Output:
 
 ![tableeee1](https://media.geeksforgeeks.org/wp-content/uploads/tableeee1.png "tableeee1")
@@ -311,46 +312,60 @@ vamshi| hyd | 123456 | 48340
 sheshu | hyd | 123456 | 78340
 
 * **Query for Max salary**
-
-> **select max(salary) from employee;**
-
+```SQL
+ select max(salary) from employee;
+```
 * **out put : 96000**
 
 * **Query for Max salary with employee name**
 
-> **select name, salary from employee where salary = (select max(salary) from employee);**
+```SQL
+select name, salary from employee where salary = (select max(salary) from employee);
+```
 
 * **out put : mehar 96000**
 
 * **Query for Min salary with employee name**
 
-> **select name, salary from employee where salary = (select min(salary) from employee);**
+```SQL
+select name, salary from employee where salary = (select min(salary) from employee);
+```
 
 * **out put : vamshi 48340**
 
 * **Query for 2nd Max salary**
 
-> **select max(salary) from employee where salary not in (select max(salary) from employee);**
+```SQL
+select max(salary) from employee where salary not in (select max(salary) from employee);
+```
 
  ###### OR
 
-> **SELECT MAX(Salary) From Employee WHERE Salary < ( SELECT Max(Salary) FROM Employee);**
+```SQL
+SELECT MAX(Salary) From Employee WHERE Salary < ( SELECT Max(Salary) FROM Employee);
+```
 
 * **out put :  88340**
 
 
 ## Nth salary with other fields
 
-*  **select name, salary from employee a where n-1 = (select count(salary)from employee b where a.salary<b.salary);**
+```SQL
+select name, salary from employee a where n-1 = (select count(salary)from employee b where a.salary<b.salary);
+```
 
 * Here you need to replace n value of the salary (2nd salary n=2, if 3rd highest salary n=3..etc)
 
 
-> **select name, salary from employee a where 2-1 = (select count(salary)from employee b where a.salary<b.salary);**
+```SQL
+select name, salary from employee a where 2-1 = (select count(salary)from employee b where a.salary<b.salary);
+```
 
 **OR**
 
-> **SELECT name, Salary FROM Employee e WHERE 2=(SELECT COUNT(DISTINCT Salary) FROM Employee p WHERE e.Salary<=p.Salary);**
+```SQL
+SELECT name, Salary FROM Employee e WHERE 2=(SELECT COUNT(DISTINCT Salary) FROM Employee p WHERE e.Salary<=p.Salary);
+```
 
 
 ##### Output: praveen 88340
