@@ -476,5 +476,17 @@ SELECT column-names
  ORDER BY column-names
  
 ```
- 
 
+* The following SQL statement lists the number of customers in each country:
+
+Ref Link :https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_groupby
+
+```SQL
+SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country;
+```
+ 
+ Result :  https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_groupby
+ 
+* The following SQL statement lists the number of customers in each country, sorted high to low:
