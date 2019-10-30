@@ -382,7 +382,7 @@ SELECT name, Salary FROM Employee e WHERE 2=(SELECT COUNT(DISTINCT Salary) FROM 
 ![Select-Statement-Execution](https://i0.wp.com/www.complexsql.com/wp-content/uploads/2017/02/Select-Statement-Execution.png?w=548&ssl=1 "Select-Statement-Execution")
 
 
-** 1.The SQL WHERE Clause:**
+**1.The SQL WHERE Clause:**
 
 * The WHERE clause is used to filter records.
 
