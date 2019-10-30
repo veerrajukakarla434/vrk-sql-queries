@@ -490,3 +490,14 @@ GROUP BY Country;
  Result :  https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_groupby
  
 * The following SQL statement lists the number of customers in each country, sorted high to low:
+
+```SQL
+SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+ORDER BY COUNT(CustomerID) DESC;
+```
+Result : https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_groupby_orderby
+
+
+
