@@ -375,9 +375,6 @@ SELECT name, Salary FROM Employee e WHERE 2=(SELECT COUNT(DISTINCT Salary) FROM 
 
 
 
-
-
-
 ![dbms-sql-clauses](https://static.javatpoint.com/dbms/images/dbms-sql-clauses.png "dbms-sql-clauses")
 
 ### Order of clauses while writing select queries:
@@ -385,7 +382,34 @@ SELECT name, Salary FROM Employee e WHERE 2=(SELECT COUNT(DISTINCT Salary) FROM 
 ![Select-Statement-Execution](https://i0.wp.com/www.complexsql.com/wp-content/uploads/2017/02/Select-Statement-Execution.png?w=548&ssl=1 "Select-Statement-Execution")
 
 
+** 1.The SQL WHERE Clause:**
 
+* The WHERE clause is used to filter records.
+
+* The WHERE clause is used to extract only those records that fulfill a specified condition.
+
+**Syntax :**
+
+* A WHERE clause with a SELECT statement:
+
+```SQL
+SELECT column-names
+  FROM table-name
+ WHERE condition
+ ```
+* A WHERE clause with an UPDATE statement:
+
+```SQL
+UPDATE table-name
+   SET column-name = value
+ WHERE condition
+ ```
+* A WHERE clause with a DELETE statement:
+
+```SQL
+DELETE table-name
+ WHERE condition
+ ```  
 
 
 
