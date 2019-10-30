@@ -529,10 +529,28 @@ Result link :https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_gro
  
 Another Example:
 
-**ORDER Table**
-------------  
+** ORDER Table**
+
+----------
+
 Id 
+
 OrderDate
+
 OrderNumber
+
 CustomerId
+
 TotalAmount
+
+** CUSTOMER Table**
+
+-------------
+Id
+FirstName
+LastName
+City
+Country
+Phone
+
+
