@@ -531,29 +531,11 @@ Another Example:
 
 **ORDER Table**
 
-Id 
-
-OrderDate
-
-OrderNumber
-
-CustomerId
-
-TotalAmount
+Id  OrderDate  OrderNumber  CustomerId TotalAmount
 
 **CUSTOMER Table**
 
-Id
-
-FirstName
-
-LastName
-
-City
-
-Country
-
-Phone
+Id  FirstName  LastName  City  Country  Phone
 
 
 * **Problem: List the total amount ordered for each customer**
