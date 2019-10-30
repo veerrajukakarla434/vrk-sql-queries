@@ -382,11 +382,12 @@ SELECT name, Salary FROM Employee e WHERE 2=(SELECT COUNT(DISTINCT Salary) FROM 
 ![Select-Statement-Execution](https://i0.wp.com/www.complexsql.com/wp-content/uploads/2017/02/Select-Statement-Execution.png?w=548&ssl=1 "Select-Statement-Execution")
 
 
-**1.The SQL WHERE Clause:**
+**1. The SQL WHERE Clause:**
 
-* The WHERE clause is used to filter records.
-
-* The WHERE clause is used to extract only those records that fulfill a specified condition.
+* To limit the number of rows use the WHERE clause.
+* The WHERE clause filters for rows that meet certain criteria.
+* WHERE is followed by a condition that returns either true or false.
+* WHERE is used with SELECT, UPDATE, and DELETE.
 
 **Syntax :**
 
@@ -403,21 +404,19 @@ SELECT column-names
 UPDATE table-name
    SET column-name = value
  WHERE condition
- ```
+```
 * A WHERE clause with a DELETE statement:
 
 ```SQL
 DELETE table-name
  WHERE condition
- ```  
+```
+* 
 
 
 
 
 
-**1. GROUP BY**
-* SQL GROUP BY statement is used to arrange identical data into groups. The GROUP BY statement is used with the SQL SELECT statement.
-* The GROUP BY statement follows the WHERE clause in a SELECT statement and precedes the ORDER BY clause.
-* The GROUP BY statement is used with aggregation function.
+
 
 
