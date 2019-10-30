@@ -499,5 +499,15 @@ ORDER BY COUNT(CustomerID) DESC;
 ```
 Result : https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_groupby_orderby
 
+**GROUP BY With JOIN Example:**
+
+#### OrderTable 
+
+**OrderID** |**CustomerID**| **EmployeeID** |**OrderDate**|**ShipperID**
+				
+------------ | ------------- | ------------- | ------------- | -------------
+10248 |	90	|5 |	1996-07-04 |	3
+10249 |	81	| 6	| 1996-07-05	| 1
+10250 |	34	| 4	| 1996-07-08	| 2
 
 
