@@ -397,6 +397,13 @@ SELECT name, Salary FROM Employee e WHERE 2=(SELECT COUNT(DISTINCT Salary) FROM 
 SELECT column-names
   FROM table-name
  WHERE condition
+ 
+ Example:
+ 
+ SELECT Id, FirstName, LastName, City, Country, Phone
+  FROM Customer
+ WHERE Country = 'Sweden'
+ 
  ```
 * A WHERE clause with an UPDATE statement:
 
@@ -404,18 +411,42 @@ SELECT column-names
 UPDATE table-name
    SET column-name = value
  WHERE condition
+ 
+ Example :
+ 
+ UPDATE Supplier
+   SET City = 'Sydney'
+ WHERE Name = 'Pavlova, Ltd.'
+ 
 ```
 * A WHERE clause with a DELETE statement:
 
 ```SQL
 DELETE table-name
  WHERE condition
+ 
+ Example: 
+ 
+ DELETE FROM Product
+ WHERE UnitPrice > 50
+ 
 ```
-* 
+**2. SQL ORDER BY Clause:** 
 
+* SELECT returns records in no particular order.
+* To ensure a specific order use the ORDER BY clause.
+* ORDER BY allows sorting by one or more columns.
+* Records can be returned in ascending or descending order.
 
+**Syntax:**
 
-
+```SQL
+SELECT column-names
+  FROM table-name
+ WHERE condition
+ ORDER BY column-names
+ ```
+ * Default order of "ORDER BY" is ASC
 
 
 
