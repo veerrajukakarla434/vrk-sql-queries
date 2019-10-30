@@ -588,3 +588,39 @@ HAVING COUNT(CustomerID) > 5
 ORDER BY COUNT(CustomerID) DESC;
 ```
 Result : https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_having_orderby
+
+* **Problem: List the number of customers in each country, except the USA, sorted high to low.
+Only include countries with 9 or more customers.**
+
+```SQL
+SELECT COUNT(Id), Country 
+  FROM Customer
+ WHERE Country <> 'USA'
+ GROUP BY Country
+HAVING COUNT(Id) >= 9
+ ORDER BY COUNT(Id) DESC
+ ```
+ 
+ Result: https://www.dofactory.com/sql/having
+ 
+ ```SQL
+ SELECT AVG(TotalAmount), FirstName, LastName
+  FROM [Order] O JOIN Customer C ON O.CustomerId = C.Id
+ GROUP BY FirstName, LastName
+HAVING AVG(TotalAmount) BETWEEN 1000 AND 1200
+```
+Result: https://www.dofactory.com/sql/having
+
+* **list out the employees name and whos salary is more than avg of employee's salary**
+
+```SQL
+select employeeId, employeeName from employee 
+where salary <(select avg(salary))
+group by employeeId, employeeName
+Order by employeeName;
+```
+
+
+
+
+
