@@ -529,9 +529,7 @@ Result link :https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_gro
  
 Another Example:
 
-** ORDER Table**
-
-----------
+**ORDER Table**
 
 Id 
 
@@ -543,14 +541,28 @@ CustomerId
 
 TotalAmount
 
-** CUSTOMER Table**
+**CUSTOMER Table**
 
--------------
 Id
+
 FirstName
+
 LastName
+
 City
+
 Country
+
 Phone
 
 
+* **Problem: List the total amount ordered for each customer**
+
+```SQL
+SELECT SUM(O.TotalPrice), C.FirstName, C.LastName
+  FROM [Order] O JOIN Customer C 
+    ON O.CustomerId = C.Id
+ GROUP BY C.FirstName, C.LastName
+ ORDER BY SUM(O.TotalPrice) DESC
+ ```
+ 
