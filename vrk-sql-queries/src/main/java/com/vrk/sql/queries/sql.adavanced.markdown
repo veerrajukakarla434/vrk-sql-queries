@@ -509,4 +509,22 @@ Result : https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_groupby
 10249 |81 |6 |1996-07-05	|1
 10250 |34 |4 |1996-07-08	|2
 
+#### Shippers Table 
+
+**ShipperID** |**ShipperName**			
+------------ | ------------- 
+1	| Speedy Express
+2	| United Package
+3	| Federal Shipping
+
+* **The following SQL statement lists the number of orders sent by each shipper:**
+
+```SQL
+SELECT Shippers.ShipperName, COUNT(Orders.OrderID) AS NumberOfOrders FROM Orders
+LEFT JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID
+GROUP BY ShipperName;
+```
+
+Result link :https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_groupby1
+ 
 
