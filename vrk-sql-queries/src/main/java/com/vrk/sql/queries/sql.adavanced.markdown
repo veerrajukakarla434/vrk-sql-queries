@@ -614,8 +614,11 @@ Result: https://www.dofactory.com/sql/having
 * **list out the employees name and whos salary is more than avg of employee's salary**
 
 ```SQL
-select employeeId, employeeName from employee  where salary <(select avg(salary))
-group by employeeId, employeeName Order by employeeName;
+select employeeId, employeeName 
+from employee  
+where salary <(select avg(salary)from employee)
+group by employeeId, employeeName 
+Order by employeeName;
 ```
 
 
