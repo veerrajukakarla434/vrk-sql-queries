@@ -527,4 +527,12 @@ GROUP BY ShipperName;
 
 Result link :https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_groupby1
  
+Another Example:
 
+**ORDER Table**
+------------  
+Id 
+OrderDate
+OrderNumber
+CustomerId
+TotalAmount
